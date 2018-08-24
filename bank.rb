@@ -1,6 +1,5 @@
 password = "opensesame"
 balance = File.open('balance.txt', 'r') {|file| file.readline}.to_i
-print balance
 
 puts "Please enter your password:"
 input = gets.chomp
@@ -56,12 +55,10 @@ if input == "#{password}"
       end
       puts
     elsif input == "exit"
-      File.open('balance.txt', 'w') { |b|
-      b.puts balance
-      }
+      File.open('balance.txt', 'w') { |b| b.puts balance}
       puts
       puts "~~~<-kthxbai!->~~~"
-    break
+      break
     else 
     puts "Invalid option!"
     puts
