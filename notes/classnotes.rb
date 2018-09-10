@@ -39,7 +39,7 @@ class MyClass
       self.variable_one = param_one
       self.variable_two = param_two
     end
-  end
+end
 
   new_instance = MyClass.new("one", "two")
   new_instance.variable_one = "new string"
@@ -47,3 +47,13 @@ class MyClass
   # => "new string"
   new_instance.variable_two
   # => "two"
+
+#SETTING A SYMBOL TO A VARIABLE
+def this_method(thing)
+  puts thing.inspect
+end
+
+ thing = :thing
+ this_method(thing)
+
+ #the above will print the symbol ':thing'
