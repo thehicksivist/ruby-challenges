@@ -65,6 +65,6 @@ if input == "#{password}"
     end
   }
 else 
-    puts "Invalid Password!"
+    puts "Invalid password!"
     puts
 end
